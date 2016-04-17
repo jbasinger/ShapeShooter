@@ -55,7 +55,12 @@ public class PlayerHealth : MonoBehaviour {
   }
 
   void PlayerDie() {
-    SceneManager.LoadScene("Main", LoadSceneMode.Single);
+    //SceneManager.LoadScene("Main", LoadSceneMode.Single);
+    DeathData data = FindObjectOfType<DeathData>() as DeathData;
+    PlayerScore score = GetComponent<PlayerScore>();
+    data.Kills = score.Score();
+    SceneManager.LoadScene("Death", LoadSceneMode.Single);
+
   }
 
   void UpdateHealthBar() {
