@@ -24,10 +24,13 @@ public class RandomStars : MonoBehaviour {
         pos.z = 0;
         
         GameObject star = Instantiate(starPrefab, pos, Quaternion.identity) as GameObject;
+        float scale = Random.Range(1f, 1.5f);
+        star.transform.localScale = new Vector2(scale, scale);
 
         star.transform.SetParent(gameObject.transform);
 
         star.transform.position = pos;
+        
 
         Rigidbody2D starBody = star.GetComponent<Rigidbody2D>();
         //starBody.gravityScale = Random.Range(0.1f, 1f);
