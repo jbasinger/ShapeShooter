@@ -32,12 +32,10 @@ public class PlayerHealth : MonoBehaviour {
     timer -= Time.deltaTime;
 	}
 
-  public void TakeDamage(int damage) {
+  public bool TakeDamage(int damage) {
 
     if (!hit) {
-
-      Debug.Log("Took damage");
-
+      
       currentHealth -= damage;
       UpdateHealthBar();
 
@@ -48,8 +46,12 @@ public class PlayerHealth : MonoBehaviour {
       hit = true;
       timer = invulnTimer;
 
+      return true;
+
     }
-    
+
+    return false;
+
   }
 
   void PlayerDie() {

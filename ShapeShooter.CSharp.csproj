@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\EnemyBatch.cs" />
     <Compile Include="Assets\Scripts\EnemyCollision.cs" />
     <Compile Include="Assets\Scripts\EnemyGenerator.cs" />
+    <Compile Include="Assets\Scripts\Explosions.cs" />
     <Compile Include="Assets\Scripts\FireBullet.cs" />
     <Compile Include="Assets\Scripts\HitByBullet.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />

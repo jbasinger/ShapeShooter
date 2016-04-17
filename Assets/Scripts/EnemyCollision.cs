@@ -15,7 +15,11 @@ public class EnemyCollision : MonoBehaviour {
 
   void OnCollisionEnter2D(Collision2D other) {
     if(other.gameObject.tag == "Player") {
-      FindObjectOfType<PlayerHealth>().TakeDamage(20);
+      bool damageApplied = FindObjectOfType<PlayerHealth>().TakeDamage(20);
+      if (damageApplied) {
+        GetComponent<Explosions>().Explode();
+        Destroy(gameObject);
+      }
     }
   }
 

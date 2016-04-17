@@ -18,6 +18,7 @@ public class HitByBullet : MonoBehaviour {
   void OnCollisionEnter2D(Collision2D other) {
     ShipInfo otherInfo = other.gameObject.GetComponent<ShipInfo>();
     if (otherInfo != null && myShipInfo.type == otherInfo.type) {
+      GetComponent<Explosions>().Explode();
       Destroy(gameObject);
       PlayerScore score = FindObjectOfType<PlayerScore>() as PlayerScore;
       score.AnotherOneBitesTheDust(1);
