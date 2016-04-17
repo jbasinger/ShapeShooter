@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\FireBullet.cs" />
     <Compile Include="Assets\Scripts\HitByBullet.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\PlayerScore.cs" />
     <Compile Include="Assets\Scripts\ShipChange.cs" />
     <Compile Include="Assets\Scripts\ShipClip.cs" />
     <Compile Include="Assets\Scripts\ShipInfo.cs" />

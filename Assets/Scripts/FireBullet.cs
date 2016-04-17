@@ -16,7 +16,7 @@ public class FireBullet : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-    if (Input.GetKey("space") && timer <= 0) {
+    if (/*Input.GetKey("space") &&*/ timer <= 0) {
       timer = cooldown;
       Instantiate(bullet, turret.position, Quaternion.identity);
     }
