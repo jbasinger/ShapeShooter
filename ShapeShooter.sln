@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeShooter.CSharp.Plugins", "ShapeShooter.CSharp.Plugins.csproj", "{40DA5E36-42D2-01EF-FFE1-D77FA7D07762}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeShooter.CSharp", "ShapeShooter.CSharp.csproj", "{30202B16-4097-1ADC-BD5C-ECF93D883904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeShooter.CSharp.Editor", "ShapeShooter.CSharp.Editor.csproj", "{49921B42-0377-8A35-DAF2-BD7CF9C6D40F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40DA5E36-42D2-01EF-FFE1-D77FA7D07762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40DA5E36-42D2-01EF-FFE1-D77FA7D07762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40DA5E36-42D2-01EF-FFE1-D77FA7D07762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40DA5E36-42D2-01EF-FFE1-D77FA7D07762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30202B16-4097-1ADC-BD5C-ECF93D883904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30202B16-4097-1ADC-BD5C-ECF93D883904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30202B16-4097-1ADC-BD5C-ECF93D883904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30202B16-4097-1ADC-BD5C-ECF93D883904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49921B42-0377-8A35-DAF2-BD7CF9C6D40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49921B42-0377-8A35-DAF2-BD7CF9C6D40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49921B42-0377-8A35-DAF2-BD7CF9C6D40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49921B42-0377-8A35-DAF2-BD7CF9C6D40F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
