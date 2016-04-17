@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: cf2c94e2c35a7704f9719cc3b0890afa
-timeCreated: 1460813986
+timeCreated: 1460908073
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,14 @@ TextureImporter:
     21300002: Ships_1
     21300004: Ships_2
     21300006: Ships_3
+    21300008: Ships_4
+    21300010: Ships_5
+    21300012: Ships_6
+    21300014: Ships_7
+    21300016: Ships_8
+    21300018: Ships_9
+    21300020: Ships_10
+    21300022: Ships_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +38,7 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
@@ -58,9 +66,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 230
+        y: 227
         width: 26
-        height: 22
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -68,15 +76,59 @@ TextureImporter:
     - name: Ships_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 196
-        width: 18
+        x: 37
+        y: 227
+        width: 19
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: Ships_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 227
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ships_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 194
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ships_4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 194
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ships_5
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 194
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ships_6
       rect:
         serializedVersion: 2
         x: 3
@@ -87,10 +139,54 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: Ships_3
+    - name: Ships_7
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 168
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ships_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 168
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ships_9
       rect:
         serializedVersion: 2
         x: 2
+        y: 130
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ships_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 130
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ships_11
+      rect:
+        serializedVersion: 2
+        x: 66
         y: 130
         width: 26
         height: 26
