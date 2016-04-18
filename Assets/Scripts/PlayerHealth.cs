@@ -13,6 +13,8 @@ public class PlayerHealth : MonoBehaviour {
   public float fullPosition;
   public float emptyPosition;
 
+  public AudioClip deathSound;
+
   float timer;
   bool hit = false;
 
@@ -59,14 +61,17 @@ public class PlayerHealth : MonoBehaviour {
     DeathData data = FindObjectOfType<DeathData>() as DeathData;
     PlayerScore score = GetComponent<PlayerScore>();
     data.Kills = score.Score();
+    AudioSource.PlayClipAtPoint(deathSound, transform.position);
     SceneManager.LoadScene("Death", LoadSceneMode.Single);
-
   }
 
   void UpdateHealthBar() {
     float percent = 1 - ((float)currentHealth / (float)maxHealth);
-    Debug.Log("Precent: " + percent.ToString());
     healthBar.rectTransform.localPosition = new Vector2(emptyPosition*percent, 0);
+  }
+
+  void LoadDeathScene() {
+    
   }
 
 }

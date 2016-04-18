@@ -3,6 +3,8 @@ using System.Collections;
 
 public class EnemyCollision : MonoBehaviour {
 
+  public AudioClip hitSound;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -18,6 +20,7 @@ public class EnemyCollision : MonoBehaviour {
       bool damageApplied = FindObjectOfType<PlayerHealth>().TakeDamage(20);
       other.gameObject.GetComponent<ColorFlipOut>().FlipOut(1f);
       if (damageApplied) {
+        AudioSource.PlayClipAtPoint(hitSound, transform.position);
         GetComponent<Explosions>().Explode();
         Destroy(gameObject);
       }

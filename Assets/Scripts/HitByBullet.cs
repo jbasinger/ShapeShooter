@@ -5,6 +5,8 @@ public class HitByBullet : MonoBehaviour {
 
   ShipInfo myShipInfo;
 
+  public AudioClip[] explosions;
+
 	// Use this for initialization
 	void Start () {
     myShipInfo = GetComponent<ShipInfo>();
@@ -19,6 +21,7 @@ public class HitByBullet : MonoBehaviour {
     ShipInfo otherInfo = other.gameObject.GetComponent<ShipInfo>();
     if (otherInfo != null && myShipInfo.type == otherInfo.type) {
       GetComponent<Explosions>().Explode();
+      AudioSource.PlayClipAtPoint(explosions[Random.Range(0, explosions.Length)], transform.position);
       Destroy(gameObject);
       PlayerScore score = FindObjectOfType<PlayerScore>() as PlayerScore;
       score.AnotherOneBitesTheDust(1);
